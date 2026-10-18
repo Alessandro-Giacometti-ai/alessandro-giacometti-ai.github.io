@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" preserveAspectRatio="xMidYMid slice">
+  <!-- Hintergrund "Stahl": dunkles Gerüst, Schraffur, ein Streifen Absperrband in der Ecke. Eigene Zeichnung. -->
+  <defs>
+    <pattern id="schraffur" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <path d="M0 0V34" stroke="#2b343c" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="#1e252b"/>
+  <rect width="1920" height="1080" fill="url(#schraffur)"/>
+  <!-- Gerüstfelder -->
+  <g fill="none" stroke="#364049" stroke-width="6">
+    <path d="M200 0V1080M600 0V1080M1000 0V1080M1400 0V1080M1800 0V1080"/>
+    <path d="M0 180H1920M0 480H1920M0 780H1920"/>
+  </g>
+  <g fill="none" stroke="#2f3943" stroke-width="3">
+    <path d="M200 180L600 480M600 180L200 480M1000 180L1400 480M1400 180L1000 480M600 480L1000 780M1000 480L600 780M1400 480L1800 780M1800 480L1400 780"/>
+  </g>
+  <g fill="#4b5762">
+    <circle cx="200" cy="180" r="9"/><circle cx="600" cy="180" r="9"/><circle cx="1000" cy="180" r="9"/><circle cx="1400" cy="180" r="9"/><circle cx="1800" cy="180" r="9"/>
+    <circle cx="200" cy="480" r="9"/><circle cx="600" cy="480" r="9"/><circle cx="1000" cy="480" r="9"/><circle cx="1400" cy="480" r="9"/><circle cx="1800" cy="480" r="9"/>
+    <circle cx="200" cy="780" r="9"/><circle cx="600" cy="780" r="9"/><circle cx="1000" cy="780" r="9"/><circle cx="1400" cy="780" r="9"/><circle cx="1800" cy="780" r="9"/>
+  </g>
+  <!-- Absperrband unten rechts -->
+  <g transform="rotate(-18 1500 980)">
+    <rect x="900" y="940" width="1500" height="64" fill="#e58a2e"/>
+    <g fill="#1a1f24">
+      <polygon points="960,940 1000,940 960,1004 920,1004"/>
+      <polygon points="1060,940 1100,940 1060,1004 1020,1004"/>
+      <polygon points="1160,940 1200,940 1160,1004 1120,1004"/>
+      <polygon points="1260,940 1300,940 1260,1004 1220,1004"/>
+      <polygon points="1360,940 1400,940 1360,1004 1320,1004"/>
+      <polygon points="1460,940 1500,940 1460,1004 1420,1004"/>
+      <polygon points="1560,940 1600,940 1560,1004 1520,1004"/>
+      <polygon points="1660,940 1700,940 1660,1004 1620,1004"/>
+      <polygon points="1760,940 1800,940 1760,1004 1720,1004"/>
+      <polygon points="1860,940 1900,940 1860,1004 1820,1004"/>
+      <polygon points="1960,940 2000,940 1960,1004 1920,1004"/>
+    </g>
+  </g>
+</svg>

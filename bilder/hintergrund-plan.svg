@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" preserveAspectRatio="xMidYMid slice">
+  <!-- Hintergrund "Bauplan": Lageplan eines Hofes auf Zeichenpapier in Blau. Eigene Zeichnung. -->
+  <defs>
+    <pattern id="fein" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#2c5476" stroke-width="1"/>
+    </pattern>
+    <pattern id="grob" width="200" height="200" patternUnits="userSpaceOnUse">
+      <path d="M200 0H0V200" fill="none" stroke="#3d6a8f" stroke-width="1.6"/>
+    </pattern>
+    <marker id="pfeil" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+      <path d="M0 5L10 2.5V7.5z" fill="#cfe4f5"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#17344e"/>
+  <rect width="1920" height="1080" fill="url(#fein)"/>
+  <rect width="1920" height="1080" fill="url(#grob)"/>
+  <g fill="none" stroke="#d6e8f7" stroke-width="3" stroke-linejoin="round">
+    <!-- Grundstück -->
+    <path d="M280 180H1480V860H280z"/>
+    <path d="M280 180H1480V860H280z" stroke-width="1.5" transform="translate(14 14)" opacity=".6"/>
+    <!-- Hallen und Container -->
+    <rect x="360" y="260" width="360" height="200"/>
+    <path d="M360 330H720M540 260V460" stroke-width="1.5"/>
+    <rect x="800" y="260" width="120" height="50"/>
+    <rect x="800" y="320" width="120" height="50"/>
+    <rect x="800" y="380" width="120" height="50"/>
+    <rect x="1000" y="260" width="400" height="300"/>
+    <path d="M1000 560L1400 260M1000 260L1400 560" stroke-width="1.2" opacity=".7"/>
+    <!-- Stapelplatz -->
+    <rect x="360" y="540" width="520" height="240"/>
+    <path d="M360 600H880M360 660H880M360 720H880" stroke-width="1.2" stroke-dasharray="14 8"/>
+    <!-- Einfahrt -->
+    <path d="M1000 860V640H1400V860" stroke-dasharray="22 10"/>
+    <path d="M1480 700H1560M1560 700L1536 684M1560 700L1536 716"/>
+    <!-- Kran-Kreis -->
+    <circle cx="1200" cy="410" r="40" stroke-width="1.5"/>
+    <circle cx="1200" cy="410" r="190" stroke-width="1.2" stroke-dasharray="6 10" opacity=".7"/>
+  </g>
+  <!-- Masslinien -->
+  <g stroke="#9fc4e2" stroke-width="1.6" fill="none">
+    <path d="M280 140H1480" marker-start="url(#pfeil)" marker-end="url(#pfeil)"/>
+    <path d="M240 180V860" marker-start="url(#pfeil)" marker-end="url(#pfeil)"/>
+    <path d="M280 120v40M1480 120v40M220 180h40M220 860h40"/>
+  </g>
+  <g fill="#bcd8ee" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle">
+    <text x="880" y="126">60 000</text>
+    <text x="218" y="520" transform="rotate(-90 218 520)">34 000</text>
+    <text x="540" y="372" font-size="18">Halle</text>
+    <text x="1200" y="590" font-size="18">Stapelplatz</text>
+    <text x="620" y="670" font-size="18">Lager</text>
+  </g>
+  <!-- Nordpfeil -->
+  <g transform="translate(1660 250)" stroke="#d6e8f7" stroke-width="2.4" fill="none">
+    <circle r="46"/>
+    <path d="M0 -62V46M0 -62L-14 -34M0 -62L14 -34"/>
+    <text x="0" y="-74" text-anchor="middle" fill="#d6e8f7" stroke="none" font-family="Arial, Helvetica, sans-serif" font-size="22">N</text>
+  </g>
+  <!-- Schriftfeld -->
+  <g stroke="#d6e8f7" stroke-width="2" fill="none">
+    <rect x="1240" y="900" width="560" height="130"/>
+    <path d="M1240 950H1800M1240 990H1800M1480 900V1030"/>
+  </g>
+  <g fill="#d6e8f7" font-family="Arial, Helvetica, sans-serif">
+    <text x="1260" y="935" font-size="24" font-weight="700">LAGEPLAN HOF</text>
+    <text x="1260" y="976" font-size="18">Massstab 1:500</text>
+    <text x="1260" y="1016" font-size="18">Beispielzeichnung</text>
+    <text x="1500" y="976" font-size="18">Blatt 1 von 1</text>
+    <text x="1500" y="1016" font-size="18">Alle Angaben erfunden</text>
+  </g>
+</svg>

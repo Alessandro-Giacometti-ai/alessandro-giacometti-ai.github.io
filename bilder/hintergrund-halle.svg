@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" preserveAspectRatio="xMidYMid slice">
+  <!-- Hintergrund Fabrikhalle nachts, eigene Zeichnung -->
+  <defs>
+    <linearGradient id="wand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12100e"/>
+      <stop offset="1" stop-color="#27231f"/>
+    </linearGradient>
+    <linearGradient id="boden" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2d2925"/>
+      <stop offset="1" stop-color="#100f0d"/>
+    </linearGradient>
+    <linearGradient id="fenster" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2d3b4b" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#1b242e" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="kegel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d3a970" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#d3a970" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="pfuetze" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#d3a970" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#d3a970" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rand" cx="0.5" cy="0.45" r="0.75">
+      <stop offset="0.55" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#wand)"/>
+
+  <!-- Fensterband in der Rückwand -->
+  <g>
+    <rect x="80" y="250" width="150" height="330" fill="url(#fenster)"/>
+    <rect x="320" y="250" width="150" height="330" fill="url(#fenster)"/>
+    <rect x="560" y="250" width="150" height="330" fill="url(#fenster)"/>
+    <rect x="800" y="250" width="150" height="330" fill="url(#fenster)"/>
+    <rect x="1040" y="250" width="150" height="330" fill="url(#fenster)"/>
+    <rect x="1280" y="250" width="150" height="330" fill="url(#fenster)"/>
+    <rect x="1520" y="250" width="150" height="330" fill="url(#fenster)"/>
+    <rect x="1760" y="250" width="100" height="330" fill="url(#fenster)"/>
+    <g stroke="#0e0d0b" stroke-width="6" fill="none">
+      <path d="M155 250V580M395 250V580M635 250V580M875 250V580M1115 250V580M1355 250V580M1595 250V580"/>
+      <path d="M80 360H230M320 360H470M560 360H710M800 360H950M1040 360H1190M1280 360H1430M1520 360H1670M1760 360H1860"/>
+      <path d="M80 470H230M320 470H470M560 470H710M800 470H950M1040 470H1190M1280 470H1430M1520 470H1670M1760 470H1860"/>
+    </g>
+  </g>
+
+  <!-- Dachbinder und Kranbahn -->
+  <g fill="none" stroke="#0c0b09" stroke-width="10">
+    <path d="M0 150H1920"/>
+    <path d="M0 150L240 70L480 150L720 70L960 150L1200 70L1440 150L1680 70L1920 150"/>
+    <path d="M240 70V150M720 70V150M1200 70V150M1680 70V150"/>
+  </g>
+  <rect x="0" y="206" width="1920" height="16" fill="#0c0b09"/>
+  <g fill="#0c0b09">
+    <rect x="1130" y="222" width="230" height="30"/>
+    <rect x="1236" y="252" width="18" height="72"/>
+    <path d="M1226 324H1264V340H1226Z"/>
+  </g>
+
+  <!-- Hängelampen: Schnur, Schirm, Lichtkegel -->
+  <g>
+    <path d="M300 150V260M740 150V250M1180 150V270M1580 150V250" stroke="#0c0b09" stroke-width="4" fill="none"/>
+    <path d="M260 260H340L360 290H240Z M700 250H780L800 280H680Z M1140 270H1220L1240 300H1120Z M1540 250H1620L1640 280H1520Z" fill="#0c0b09"/>
+    <path d="M240 290H360L520 820H80Z" fill="url(#kegel)"/>
+    <path d="M680 280H800L980 820H500Z" fill="url(#kegel)"/>
+    <path d="M1120 300H1240L1440 820H920Z" fill="url(#kegel)"/>
+    <path d="M1520 280H1640L1820 820H1340Z" fill="url(#kegel)"/>
+    <g fill="#f4dcae">
+      <ellipse cx="300" cy="291" rx="46" ry="5"/>
+      <ellipse cx="740" cy="281" rx="46" ry="5"/>
+      <ellipse cx="1180" cy="301" rx="46" ry="5"/>
+      <ellipse cx="1580" cy="281" rx="46" ry="5"/>
+    </g>
+  </g>
+
+  <!-- Maschinen im Schatten, wenige Kontrolllampen -->
+  <g fill="#0f0e0c">
+    <rect x="60" y="590" width="260" height="190"/>
+    <rect x="90" y="540" width="120" height="50"/>
+    <rect x="420" y="640" width="340" height="140"/>
+    <rect x="470" y="600" width="90" height="40"/>
+    <rect x="900" y="600" width="210" height="180"/>
+    <rect x="1260" y="630" width="400" height="150"/>
+    <rect x="1330" y="580" width="120" height="50"/>
+    <rect x="1740" y="570" width="150" height="210"/>
+  </g>
+  <g>
+    <circle cx="120" cy="620" r="5" fill="#4fa16c"/>
+    <circle cx="140" cy="620" r="5" fill="#e58a2e"/>
+    <circle cx="935" cy="630" r="5" fill="#4fa16c"/>
+    <circle cx="1300" cy="660" r="5" fill="#4fa16c"/>
+    <circle cx="1780" cy="600" r="5" fill="#e58a2e"/>
+  </g>
+
+  <!-- Boden mit Perspektivfugen und Spiegelung der Lampen -->
+  <rect x="0" y="780" width="1920" height="300" fill="url(#boden)"/>
+  <g stroke="#3a342e" stroke-width="2" opacity="0.5" fill="none">
+    <path d="M0 860H1920M0 960H1920"/>
+    <path d="M960 780L-200 1080M960 780L260 1080M960 780L620 1080M960 780L960 1080M960 780L1300 1080M960 780L1660 1080M960 780L2120 1080"/>
+  </g>
+  <g>
+    <ellipse cx="300" cy="830" rx="250" ry="38" fill="url(#pfuetze)"/>
+    <ellipse cx="740" cy="830" rx="270" ry="40" fill="url(#pfuetze)"/>
+    <ellipse cx="1180" cy="830" rx="270" ry="40" fill="url(#pfuetze)"/>
+    <ellipse cx="1580" cy="830" rx="250" ry="38" fill="url(#pfuetze)"/>
+  </g>
+
+  <rect width="1920" height="1080" fill="url(#rand)"/>
+</svg>
